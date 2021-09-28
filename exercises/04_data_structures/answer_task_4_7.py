@@ -17,9 +17,5 @@
 
 mac = "AAAA:BBBB:CCCC"
 
-ast,bst,cst = mac.split(':')
-a = int(ast, 16)
-b = int(bst, 16)
-c = int(cst, 16)
-
-print(f'{a:b}'+f'{b:b}'+f'{c:b}')
+bin_mac = "{:b}".format(int(mac.replace(":", ""), 16))
+print(bin_mac)
